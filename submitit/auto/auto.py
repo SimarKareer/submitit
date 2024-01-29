@@ -125,7 +125,7 @@ class AutoExecutor(Executor):
             "mem_gb": float,
             "nodes": int,
             "cpus_per_task": int,
-            "gpus_per_node": int,
+            "gpus_per_node": str,
             "tasks_per_node": int,
             "stderr_to_stdout": bool,
         }
