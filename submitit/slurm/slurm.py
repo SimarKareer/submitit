@@ -512,6 +512,7 @@ def _make_sbatch_string(
         command = " ".join((srun_cmd, command))
 
     lines += [
+        "#SBATCH --requeue",
         "",
         "# command",
         "export SUBMITIT_EXECUTOR=slurm",
